@@ -20,6 +20,41 @@
 | `references/online-sources.md` | 五大鸡尾酒网站的搜索策略 |
 | `references/top-bars.md` | World's 50 Best Bars 榜单与概览 |
 
+## 一键安装
+
+将以下内容直接发给 AI Agent（Claude Code / Codex CLI / Cursor / OpenClaw 等），Agent 将自动完成安装：
+
+```
+请安装 Cocktail Craft skill：
+
+# 下载
+curl -L -o cocktail-craft.zip https://github.com/makishimatouri/COCKTAIL/archive/refs/heads/main.zip
+
+# 解压
+unzip cocktail-craft.zip -d /tmp/cocktail-craft
+
+# 移动到 skills 目录（按你的平台调整路径）
+# OpenClaw:
+mv /tmp/cocktail-craft/COCKTAIL-main ~/.openclaw/workspace/skills/cocktail-craft
+
+# Claude Code / Cursor:
+mv /tmp/cocktail-craft/COCKTAIL-main ~/.claude/skills/cocktail-craft
+
+# Codex CLI:
+mv /tmp/cocktail-craft/COCKTAIL-main ~/.codex/skills/cocktail-craft
+
+安装完成后确认 references/ 目录下有 13 个参考文件即可。
+```
+
+或者用 ClawHub 一键安装（需要 clawhub CLI）：
+
+```
+请帮我安装 Cocktail Craft skill。
+
+如果 ClawHub 上还没有，就从 GitHub 安装：
+git clone https://github.com/makishimatouri/COCKTAIL.git ~/.openclaw/workspace/skills/cocktail-craft
+```
+
 ## 用法
 
 兼容 OpenClaw、Claude Code、Cursor、Codex CLI 等所有支持 SKILL.md 格式的 AI Agent。
